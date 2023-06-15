@@ -66,6 +66,9 @@ def hangman():
         print('You died, sorry. The word was', word)
     else:
         print('YAY! You guessed the word', word, '!!')
+        new_game = input('To play another game, type "G": ').upper()
+        if new_game == 'G':
+            hangman()
 
 
 if __name__ == '__main__':
